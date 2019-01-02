@@ -5,7 +5,7 @@ struct ListNode {
 	ListNode *next;
 	ListNode(int x) : val(x), next(NULL) {}
 };
- 
+
 class Solution {
 public:
 	ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -71,7 +71,5 @@ int main() {
 	a3->next = a4;
 	a4->next = NULL;
 	Solution sln;
-	sln.removeNthFromEnd(a,2);
-
-	cout << "ss" << endl;
+	sln.removeNthFromEnd(a, 2);
 }
