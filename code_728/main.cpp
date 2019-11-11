@@ -31,6 +31,6 @@ public:
 
 int main() {
 	Solution sln;
-	vector<int> ret = sln.selfDividingNumbers(1, 22);
+	vector<int> ret = sln.selfDividingNumbers(1, 128);
 	return 0;
 }
