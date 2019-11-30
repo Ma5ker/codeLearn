@@ -5,34 +5,25 @@
 using namespace std;
 class Solution {
 public:
-	int count_a(string S,char a) {
-		int ret = 0;
-		for(auto i : S) {
-			if (i == a) {
-				ret++;
-			}
-		}
-		return ret;
-	}
 	vector<string> commonChars(vector<string>& A) {
 		vector<string> ret;
-		string junk = "";
-		for (auto i : A[0]) {
-			int count = count_a(A[0], i);
-			if (count_a(junk,i) != 0) {
-				continue;
-			}
-			for (int j = 1; j < A.size(); j++) {
-				int tmp = count_a(A[j], i);
-				if (count > tmp) {
+		for (char i = 'z'; i >= 'a'; i--) {
+			int count = 101;
+			for (auto j : A) {
+				int tmp = 0;
+				for (auto t : j) {
+					if (t == i) {
+						tmp++;
+					}
+				}
+				if (tmp < count) {
 					count = tmp;
 				}
 			}
-			for (int k = 0; k < count;k++) {
-				string str = "";
-				str.append(1, i);
-				ret.push_back(str);
-				junk += str;
+			for (int k = 0; k < count; k++) {
+				string s = "a";
+				s[0] = i;
+				ret.push_back(s);
 			}
 		}
 		return ret;
