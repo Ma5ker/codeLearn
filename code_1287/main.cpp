@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     int findSpecialInteger(vector<int>& arr) {
-        int size = arr.size();
+        size_t size = arr.size();
         int current = arr[0], count = 0;
         for (int i = 0; i < size; i++) {
             if (current == arr[i]) {
