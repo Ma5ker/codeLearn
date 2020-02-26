@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include<sstream>
+#include <sstream>
 #include <vector>
 #include <string>
 using namespace std;
