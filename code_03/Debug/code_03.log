@@ -1,6 +1,1 @@
-﻿  main.cpp
-c:\users\raspb\desktop\codelearn\code_03\main.cpp(35): warning C4018: '<': signed/unsigned mismatch
-c:\users\raspb\desktop\codelearn\code_03\main.cpp(39): warning C4018: '<': signed/unsigned mismatch
-c:\users\raspb\desktop\codelearn\code_03\main.cpp(42): warning C4018: '>': signed/unsigned mismatch
-c:\users\raspb\desktop\codelearn\code_03\main.cpp(49): warning C4018: '>': signed/unsigned mismatch
-  code_03.vcxproj -> C:\Users\RaspB\Desktop\codeLearn\Debug\code_03.exe
+﻿
